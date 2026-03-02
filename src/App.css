@@ -1,0 +1,16 @@
+/* App.css - Component-specific styles if needed */
+/* Since we're using Tailwind, this file can be minimal */
+
+/* Example: Custom animations or overrides */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* You can add any custom component styles here if Tailwind doesn't cover something */
