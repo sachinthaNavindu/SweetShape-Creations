@@ -1,17 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/home/Home";
-import SignIn from "./pages/auth/SigninPage";
-import './App.css';
+import SignIn from "./pages/auth/AuthPage";
+import "./App.css";
+import AuthLayout from "./layouts/AuthLayout";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/signin" replace />} />
+
+        <Route element={<AuthLayout />}>
+          <Route path="/signin" element={<SignIn />} />
         </Route>
 
-        <Route path="/signin" element={<SignIn />} />
+        <Route element={<MainLayout />}>
+          <Route path="/home" element={<Home />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

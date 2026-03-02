@@ -27,9 +27,6 @@ function Navbar() {
             <a href="#" className="text-gray-700 hover:text-rose-600 transition">
               Contact
             </a>
-            <button className="bg-rose-600 text-white px-4 py-2 rounded-lg hover:bg-rose-700 transition">
-              Sign In
-            </button>
           </div>
 
           <button

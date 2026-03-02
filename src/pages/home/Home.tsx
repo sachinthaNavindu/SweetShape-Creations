@@ -4,7 +4,7 @@ import {
   ChevronRightIcon,
   StarIcon
 } from '@heroicons/react/24/outline';
-
+import heroImage from "../../assets/Gemini_Generated_Image_8wbn758wbn758wbn.png";
 
 function Home() {
 
@@ -47,7 +47,7 @@ function Home() {
             </div>
             <div className="hidden md:block">
               <img 
-                src="https://via.placeholder.com/600x400" 
+                src={heroImage}
                 alt="Baking supplies" 
                 className="rounded-lg shadow-xl"
               />
